@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Views/RCTActivityIndicatorView.m \
+  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Views/RCTActivityIndicatorView.h
