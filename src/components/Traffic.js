@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import moment from 'moment';
 import * as traffic from '../lib/traffic';
 
 class Traffic extends Component {
@@ -46,8 +47,6 @@ class Traffic extends Component {
     return(
       <View>
         <Text style={trafficHeader}>TRAFFIC</Text>
-        <Text>From: {traffic.origin_addresses[0]}</Text>
-        <Text>To: {traffic.destination_addresses[0]}</Text>
         <Text>Estimated Arrival: {this.getArrivalTime()}</Text>
       </View>
     );
@@ -55,17 +54,13 @@ class Traffic extends Component {
   
   getArrivalTime() {
     const { value } = this.state.traffic.rows[0].elements[0].duration;
-    const current = Date.now();
-    const milliseconds = current + (value * 1000);
-    const arrivalTime = new Date(milliseconds);
-    const arrivalString = `${arrivalTime.getHours()}:${arrivalTime.getMinutes()}:${arrivalTime.getSeconds()}`
-    return arrivalString;
+    return moment().add(value, 's');
   }
 }
 
 const styles = StyleSheet.create({
   trafficHeader: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: '800'
   },
 });

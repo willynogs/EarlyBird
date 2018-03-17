@@ -62,7 +62,7 @@ const styles = {
     alignItems: 'center'
   },
   weatherHeader: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: '800'
   },
   weatherLocation: {

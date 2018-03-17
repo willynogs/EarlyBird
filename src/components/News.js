@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import moment from 'moment';
 import * as news from '../lib/news';
 
 class News extends Component {
@@ -52,8 +53,26 @@ class News extends Component {
           <Image source={{ uri: articles[0].urlToImage }} resizeMode={'cover'} style={{ height: leadLayout.width, width: leadLayout.width }} />
           <Text style={leadArticleTitle}>{articles[0].title}</Text>
         </TouchableOpacity>
+        {this.showArticles()}
       </View>
     );
+  }
+  
+  showArticles() {
+    const { articles } = this.state;
+    
+    return articles.map((e, i) => {
+      if(i == 0) return;
+      return (
+        <TouchableOpacity key={e.title} style={{ paddingVertical: 5 }}>
+          <Text style={{ fontSize: 16, fontWeight: '200' }}>{e.title}</Text>
+          <View>
+            <Text>{e.source.name}</Text>
+            <Text>{moment(e.publishedAt).format('MMMM Do YYYY @ h:mm a')}</Text>
+          </View>
+        </TouchableOpacity>
+      );
+    });
   }
 }
 
@@ -67,7 +86,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch'
   },
   newsHeader: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: '800'
   },
   leadArticleContainer: {
