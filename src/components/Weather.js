@@ -33,7 +33,7 @@ class Weather extends Component {
   
   showLoading() {
     const { loading, weather } = this.state;
-    const { weatherHeader } = styles;
+    const { weatherHeader, weatherContainer, weatherLocation, textContainer } = styles;
     
     if(loading) {
       return (
@@ -44,18 +44,35 @@ class Weather extends Component {
     return (
       <View>
         <Text style={weatherHeader}>WEATHER</Text>
-        <Text>{weather.name}</Text>
-        <Text>Temp: {weather.main.temp}</Text>
+        <View style={weatherContainer}>
+          <Ionicons name='ios-sunny' size={50} />
+          <View style={textContainer}>
+            <Text style={weatherLocation}>{weather.name}</Text>
+            <Text>{weather.main.temp}°F</Text>
+          </View>
+        </View>
       </View>
     );
   }
 }
 
 const styles = {
+  weatherContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
   weatherHeader: {
     fontSize: 40,
     fontWeight: '800'
   },
+  weatherLocation: {
+    fontSize: 20,
+    fontWeight: '600'
+  },
+  textContainer: {
+    justifyContent: 'center',
+    marginHorizontal: 10
+  }
 };
 
 export default Weather;

@@ -49,9 +49,8 @@ class News extends Component {
       <View style={newsContainer}>
         <Text style={newsHeader}>NEWS</Text>
         <TouchableOpacity style={leadArticleContainer} onLayout={e => this.setState({ leadLayout: e.nativeEvent.layout })}>
-          <Image source={{ uri: articles[0].urlToImage }} resizeMode={'cover'} style={{ height: '300px', width: leadLayout.width }} />
+          <Image source={{ uri: articles[0].urlToImage }} resizeMode={'cover'} style={{ height: leadLayout.width, width: leadLayout.width }} />
           <Text style={leadArticleTitle}>{articles[0].title}</Text>
-          <Text>{articles[0].description}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -73,11 +72,19 @@ const styles = StyleSheet.create({
   },
   leadArticleContainer: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
     alignSelf: 'stretch'
   },
   leadArticleTitle: {
-    fontSize: 20,
-    fontWeight: '600'
+    fontSize: 25,
+    fontWeight: '200',
+    position: 'absolute',
+    color: '#FFF',
+    backgroundColor: 'rgba(0,0,0,0.8)',
+    textAlign: 'center',
+    marginHorizontal: 15,
+    padding: 15
   }
 });
 
