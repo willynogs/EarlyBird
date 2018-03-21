@@ -9,7 +9,7 @@ import config from '../../config';
 export const getTraffic = (a, b) => {
   const { maps_key } = config;
   return new Promise((resolve, reject) => {
-    fetch(`https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${a.lat},${a.lon}&destinations=San+Francisco&key=${maps_key}`, {
+    fetch(`https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${a.lat},${a.lon}&destinations=${b.lat},${b.lon}&key=${maps_key}`, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -17,7 +17,7 @@ export const getTraffic = (a, b) => {
       }}).then(response => {
         if(response.status == 200) {
           const json = JSON.parse(response._bodyText);
-          resolve(json);  
+          resolve(json);
         }
       }).catch(e => {
         reject(e);

@@ -1,10 +1,10 @@
 dependencies: \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTDisplayLink.m \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTDisplayLink.h \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTModuleData.h \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/node_modules/react-native/React/Profiler/RCTProfile.h
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTDisplayLink.m \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTDisplayLink.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTModuleData.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/node_modules/react-native/React/Profiler/RCTProfile.h

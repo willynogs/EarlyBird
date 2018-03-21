@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>VKPCUXSD29.org.reactjs.native.example.EarlyBirdAssistant</string>
+	<string>VKPCUXSD29.com.willynogs.EarlyBird</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>VKPCUXSD29.org.reactjs.native.example.EarlyBirdAssistant</string>
+		<string>VKPCUXSD29.com.willynogs.EarlyBird</string>
 	</array>
 </dict>
 </plist>

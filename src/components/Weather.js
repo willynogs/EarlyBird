@@ -6,23 +6,24 @@ import * as weather from '../lib/weather';
 class Weather extends Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       loading: true,
       weather: {}
     };
   }
-  
+
   componentWillMount() {
-    weather.get('Los+Angeles')
+    const { latitude, longitude } = this.props.coords;
+
+    weather.get(latitude, longitude)
     .then(response => {
-      console.log(response);
       this.setState({ loading: false, weather: response });
     }).catch(e => {
       console.log(e);
     })
   }
-  
+
   render() {
     return (
       <View>
@@ -30,17 +31,17 @@ class Weather extends Component {
       </View>
     );
   }
-  
+
   showLoading() {
     const { loading, weather } = this.state;
     const { weatherHeader, weatherContainer, weatherLocation, textContainer } = styles;
-    
+
     if(loading) {
       return (
         <View><Text>Loading</Text></View>
       );
     }
-    
+
     return (
       <View>
         <Text style={weatherHeader}>WEATHER</Text>

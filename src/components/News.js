@@ -6,16 +6,16 @@ import * as news from '../lib/news';
 class News extends Component {
   constructor(props) {
     super(props);
-    
+
     this.showLoading = this.showLoading.bind(this);
-    
+
     this.state = {
       loading: true,
       leadLayout: {},
       articles: []
     };
   }
-  
+
   componentWillMount() {
     news.getAll()
     .then(response => {
@@ -25,8 +25,8 @@ class News extends Component {
       console.log(e);
     });
   }
-  
-  render() {    
+
+  render() {
     const { containerStyle } = styles;
 
     return (
@@ -35,21 +35,21 @@ class News extends Component {
       </View>
     );
   }
-  
+
   showLoading() {
     const { newsContainer, leadArticleContainer, leadArticleImage, leadArticleTitle, newsHeader } = styles;
     const { loading, articles, leadLayout } = this.state;
-    
+
     if(loading) {
       return(
         <Text>Loading</Text>
       );
     }
-    
+
     return (
       <View style={newsContainer}>
         <Text style={newsHeader}>NEWS</Text>
-        <TouchableOpacity style={leadArticleContainer} onLayout={e => this.setState({ leadLayout: e.nativeEvent.layout })}>
+        <TouchableOpacity style={leadArticleContainer} onPress={() => this.goToArticle(articles[0])} onLayout={e => this.setState({ leadLayout: e.nativeEvent.layout })}>
           <Image source={{ uri: articles[0].urlToImage }} resizeMode={'cover'} style={{ height: leadLayout.width, width: leadLayout.width }} />
           <Text style={leadArticleTitle}>{articles[0].title}</Text>
         </TouchableOpacity>
@@ -57,14 +57,14 @@ class News extends Component {
       </View>
     );
   }
-  
+
   showArticles() {
     const { articles } = this.state;
-    
+
     return articles.map((e, i) => {
       if(i == 0) return;
       return (
-        <TouchableOpacity key={e.title} style={{ paddingVertical: 5 }}>
+        <TouchableOpacity key={e.title} onPress={() => this.goToArticle(e)} style={{ paddingVertical: 5 }}>
           <Text style={{ fontSize: 16, fontWeight: '200' }}>{e.title}</Text>
           <View>
             <Text>{e.source.name}</Text>
@@ -73,6 +73,11 @@ class News extends Component {
         </TouchableOpacity>
       );
     });
+  }
+
+  goToArticle(article) {
+    const { navigate } = this.props.navigation;
+    navigate('Browser', { url: article.url });
   }
 }
 

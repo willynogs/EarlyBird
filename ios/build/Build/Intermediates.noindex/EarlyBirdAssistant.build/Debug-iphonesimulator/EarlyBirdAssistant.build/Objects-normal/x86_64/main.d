@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/ios/EarlyBirdAssistant/main.m \
-  /Users/willynogs/Documents/CODE/EarlyBirdAssistant/ios/EarlyBirdAssistant/AppDelegate.h
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/EarlyBirdAssistant/main.m \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/EarlyBirdAssistant/AppDelegate.h
