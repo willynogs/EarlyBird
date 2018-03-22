@@ -37,6 +37,7 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* EarlyBirdAssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EarlyBirdAssistantTests.m */; };
 		3F72E8214E9444B88C37E077 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BADFFBC1CF284B1987D9B5F9 /* MaterialCommunityIcons.ttf */; };
+		4089B4CFBEEB481284B52ED1 /* Walbaum Fraktur.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89B5BC1B2FB44D6AB13D65A2 /* Walbaum Fraktur.ttf */; };
 		4AC971184B4042ACA1EBEEA0 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C4824AEE8140D0AA31DF7D /* Ionicons.ttf */; };
 		4DA9FD8C0DB74CB4B3A633B9 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 298A9FA589664C1FADD1040E /* MaterialIcons.ttf */; };
 		57040C3007804721859DE2E0 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 492334C419A44668B8F4FD4B /* Foundation.ttf */; };
@@ -369,6 +370,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		844571C678CB42BEBA8A7CC5 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		860B3891857E4950A469D194 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
+		89B5BC1B2FB44D6AB13D65A2 /* Walbaum Fraktur.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Walbaum Fraktur.ttf"; path = "../assets/fonts/Walbaum Fraktur.ttf"; sourceTree = "<group>"; };
 		A13251C50FF849008C80305B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		BADFFBC1CF284B1987D9B5F9 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 				844571C678CB42BEBA8A7CC5 /* Octicons.ttf */,
 				A13251C50FF849008C80305B /* SimpleLineIcons.ttf */,
 				BEC49B25945541C39B2BB53B /* Zocial.ttf */,
+				89B5BC1B2FB44D6AB13D65A2 /* Walbaum Fraktur.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1143,6 +1146,7 @@
 				BD131E7760E94324A1F8A6BA /* Octicons.ttf in Resources */,
 				28C6B25756AB478EA3F15981 /* SimpleLineIcons.ttf in Resources */,
 				64F82C297EFA4726ADDFBC77 /* Zocial.ttf in Resources */,
+				4089B4CFBEEB481284B52ED1 /* Walbaum Fraktur.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

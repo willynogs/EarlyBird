@@ -25,11 +25,15 @@ class Root extends Component {
 
   render() {
     return (
-      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+      <View style={{ flex: 1, backgroundColor: '#FFF', paddingTop: 25 }}>
+        <Header />
 
-        {this.showLoading()}
+        <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
 
-      </ScrollView>
+          {this.showLoading()}
+
+        </ScrollView>
+      </View>
     );
   }
 
@@ -44,8 +48,6 @@ class Root extends Component {
 
     return (
       <View style={{ flex: 1 }}>
-        <Header />
-
         <Traffic coords={coords} navigation={this.props.navigation} />
 
         <Weather coords={coords} />
@@ -60,7 +62,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop: 20,
     paddingHorizontal: 25
   },
 });

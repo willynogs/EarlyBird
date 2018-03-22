@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import MainStack from './src/navigation/MainStack';
+import Tabs from './src/navigation/Tabs';
 
 class App extends React.Component {
   render() {
     return (
-      <MainStack />
+      <Tabs />
     );
   }
 }

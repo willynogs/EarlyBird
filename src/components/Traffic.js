@@ -126,7 +126,8 @@ const styles = StyleSheet.create({
   },
   trafficHeader: {
     fontSize: 30,
-    fontWeight: '800'
+    color: '#eb685b',
+    fontWeight: '200'
   },
   trafficTime: {
     fontSize: 20,

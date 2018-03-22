@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import moment from 'moment';
 
 class Header extends Component {
@@ -7,26 +7,39 @@ class Header extends Component {
     super(props);
 
     this.state = {
-      day: '',
-      date: '',
+      date: ''
     };
   }
 
   componentWillMount() {
-    const day = moment().format('dddd');
-    const date = moment().format('MMMM Do');
-    this.setState({ day, date });
+    const date = moment().format('dddd, MMMM Do');
+    this.setState({ date });
   }
 
   render() {
-    const { day, date } = this.state;
+    const { date } = this.state;
+    const { headerText, subText } = styles;
 
     return (
       <View style={{ padding: 10, alignItems: 'center' }}>
-        <Text style={{ fontSize: 25, fontWeight: '600' }}>{`${day} // ${date}`}</Text>
+        <Text style={headerText}>Early Bird Times</Text>
+        <Text style={subText}>{`${date}`}</Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  headerText: {
+    fontFamily: 'Walbaum Fraktur',
+    fontSize: 40,
+    fontWeight: '600',
+    textDecorationLine: 'underline',
+    textDecorationColor: '#eb685b'
+  },
+  subText: {
+    fontWeight: '100'
+  }
+});
 
 export default Header;
