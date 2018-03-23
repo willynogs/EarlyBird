@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-import Header from './Header';
 import Weather from './Weather';
 import News from './News';
 import Traffic from './Traffic';
@@ -25,9 +24,7 @@ class Root extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1, backgroundColor: '#FFF', paddingTop: 25 }}>
-        <Header />
-
+      <View style={{ flex: 1 }}>
         <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
 
           {this.showLoading()}

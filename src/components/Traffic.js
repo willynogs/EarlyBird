@@ -62,7 +62,6 @@ class Traffic extends Component {
           <Text style={trafficHeader}>TRAFFIC</Text>
         </TouchableOpacity>
         <View style={trafficContainer}>
-          <Ionicons name='ios-car' size={50} />
           {this.showLocation()}
         </View>
       </View>
@@ -92,7 +91,10 @@ class Traffic extends Component {
     if(locationSaved) {
       return (
         <View style={textContainer}>
-          <Text style={trafficTime}>{this.getDuration()}</Text>
+          <Text style={trafficTime}>
+            <Ionicons name='ios-clock-outline' size={30} />
+            {this.getDuration()}
+          </Text>
           <Text>You will arrive at {this.getArrivalTime()}</Text>
         </View>
       );
@@ -109,7 +111,7 @@ class Traffic extends Component {
   getDuration() {
     const { value } = this.state.traffic.rows[0].elements[0].duration;
     const dur = moment.duration(value, 'seconds');
-    return `${dur.hours() > 0 ? dur.hours() + ' Hours ' : ''}${dur.minutes() > 0 ? dur.minutes() + ' Minutes' : ''}`;
+    return `${dur.hours() > 0 ? dur.hours() + ' Hr ' : ''}${dur.minutes() > 0 ? dur.minutes() + ' Min' : ''}`;
   }
 
   getArrivalTime() {
@@ -130,12 +132,11 @@ const styles = StyleSheet.create({
     fontWeight: '200'
   },
   trafficTime: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: '600'
   },
   textContainer: {
-    justifyContent: 'center',
-    marginHorizontal: 10
+    justifyContent: 'center'
   }
 });
 

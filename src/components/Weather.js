@@ -64,7 +64,8 @@ const styles = {
   },
   weatherHeader: {
     fontSize: 30,
-    fontWeight: '800'
+    color: '#eb685b',
+    fontWeight: '200'
   },
   weatherLocation: {
     fontSize: 20,
