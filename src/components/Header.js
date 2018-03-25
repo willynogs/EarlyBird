@@ -69,7 +69,7 @@ class Header extends Component {
       </TouchableOpacity>
     );
   }
-}
+} 
 
 const styles = {
   headerTextContainer: {
