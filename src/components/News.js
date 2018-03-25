@@ -37,7 +37,7 @@ class News extends Component {
   }
 
   showLoading() {
-    const { newsContainer, leadArticleContainer, leadArticleImage, leadArticleTitle, newsHeader } = styles;
+    const { newsContainer, leadArticleContainer, leadArticleImage, leadArticleText, leadArticleTitle, leadArticleSubText, newsHeader } = styles;
     const { loading, articles, leadLayout } = this.state;
 
     if(loading) {
@@ -51,7 +51,11 @@ class News extends Component {
         <Text style={newsHeader}>NEWS</Text>
         <TouchableOpacity style={leadArticleContainer} onPress={() => this.goToArticle(articles[0])} onLayout={e => this.setState({ leadLayout: e.nativeEvent.layout })}>
           <Image source={{ uri: articles[0].urlToImage }} resizeMode={'cover'} style={{ height: leadLayout.width, width: leadLayout.width }} />
-          <Text style={leadArticleTitle}>{articles[0].title}</Text>
+          <View style={leadArticleText}>
+            <Text style={leadArticleTitle}>{articles[0].title}</Text>
+            <Text style={leadArticleSubText}>{articles[0].source.name}</Text>
+            <Text style={leadArticleSubText}>{moment(articles[0].publishedAt).format('MMMM Do YYYY @ h:mm a')}</Text>
+          </View>
         </TouchableOpacity>
         {this.showArticles()}
       </View>
@@ -100,15 +104,25 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch'
   },
+  leadArticleText: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0,0,0,0.8)',
+    padding: 15,
+    justifyContent: 'space-around'
+  },
   leadArticleTitle: {
     fontSize: 25,
     fontWeight: '200',
-    position: 'absolute',
     color: '#FFF',
-    backgroundColor: 'rgba(0,0,0,0.8)',
     textAlign: 'center',
-    marginHorizontal: 15,
-    padding: 15
+    marginBottom: 7
+  },
+  leadArticleSubText: {
+    color: '#FFF',
+    fontWeight: '200',
+    textAlign: 'center',
+    fontStyle: 'italic',
+    marginBottom: 5
   }
 });
 
