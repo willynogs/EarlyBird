@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'EarlyBirdAssistant' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for EarlyBirdAssistant
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+
+  target 'EarlyBirdAssistantTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'EarlyBirdAssistant-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for EarlyBirdAssistant-tvOS
+
+  target 'EarlyBirdAssistant-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

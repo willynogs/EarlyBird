@@ -2,7 +2,7 @@ import React from 'react';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MainStack from './MainStack';
-import Settings from '../components/Settings';
+import SettingsStack from './SettingsStack';
 
 export default TabNavigator({
   Home: {
@@ -11,7 +11,7 @@ export default TabNavigator({
       title: 'Daily Brief'
     })
   },
-  Settings: { screen: Settings }
+  Settings: { screen: SettingsStack }
 }, {
   navigationOptions: ({ navigation }) => ({
     tabBarIcon: ({ focused, tintColor }) => {

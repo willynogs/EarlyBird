@@ -58,9 +58,7 @@ class Traffic extends Component {
 
     return(
       <View>
-        <TouchableOpacity onPress={() => this.chooseLocation()}>
-          <Text style={trafficHeader}>TRAFFIC</Text>
-        </TouchableOpacity>
+        <Text style={trafficHeader}>TRAFFIC</Text>
         <View style={trafficContainer}>
           {this.showLocation()}
         </View>
@@ -77,11 +75,6 @@ class Traffic extends Component {
     }).catch(e => {
       console.log(e);
     });
-  }
-
-  chooseLocation() {
-    const { navigate } = this.props.navigation;
-    navigate('Search', { callback: this.setLocation.bind(this) });
   }
 
   showLocation() {

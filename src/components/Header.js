@@ -44,12 +44,15 @@ class Header extends Component {
   }
 
   showLeft() {
+    if(!this.props.navigation) return;
+
     const { sideButtonOuterContainer, sideButtonContainer } = styles;
     const { leftOpacity } = this.state;
+    const { initialRoute } = this.props;
     const { goBack } = this.props.navigation;
     const { routeName } = this.props.navigation.state;
 
-    if(routeName === 'Home') {
+    if(routeName === initialRoute) {
       Animated.timing(leftOpacity, {
         toValue: 0,
         duration: 300
@@ -69,7 +72,7 @@ class Header extends Component {
       </TouchableOpacity>
     );
   }
-} 
+}
 
 const styles = {
   headerTextContainer: {

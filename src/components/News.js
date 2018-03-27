@@ -96,7 +96,8 @@ const styles = StyleSheet.create({
   },
   newsHeader: {
     fontSize: 30,
-    fontWeight: '800'
+    color: '#eb685b',
+    fontWeight: '200'
   },
   leadArticleContainer: {
     flex: 1,
@@ -108,6 +109,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: 'rgba(0,0,0,0.8)',
     padding: 15,
+    maxWidth: '90%',
     justifyContent: 'space-around'
   },
   leadArticleTitle: {

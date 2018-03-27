@@ -23,6 +23,7 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		222D820A01834E9BA1D3EDFA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E88468AD76E4DB6A88CA4C9 /* Entypo.ttf */; };
+		23F54A7036DFE9F14131534F /* libPods-EarlyBirdAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE901BF5E764D818D5DC39E /* libPods-EarlyBirdAssistant.a */; };
 		28C6B25756AB478EA3F15981 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A13251C50FF849008C80305B /* SimpleLineIcons.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -38,16 +39,21 @@
 		2DCD954D1E0B4F2C00145EB5 /* EarlyBirdAssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EarlyBirdAssistantTests.m */; };
 		3F72E8214E9444B88C37E077 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BADFFBC1CF284B1987D9B5F9 /* MaterialCommunityIcons.ttf */; };
 		4089B4CFBEEB481284B52ED1 /* Walbaum Fraktur.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89B5BC1B2FB44D6AB13D65A2 /* Walbaum Fraktur.ttf */; };
+		4556A258741F7A6B28DDF80E /* libPods-EarlyBirdAssistant-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FA925BEB234D92A947F7C8 /* libPods-EarlyBirdAssistant-tvOS.a */; };
 		4AC971184B4042ACA1EBEEA0 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C4824AEE8140D0AA31DF7D /* Ionicons.ttf */; };
 		4DA9FD8C0DB74CB4B3A633B9 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 298A9FA589664C1FADD1040E /* MaterialIcons.ttf */; };
 		57040C3007804721859DE2E0 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 492334C419A44668B8F4FD4B /* Foundation.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		64F82C297EFA4726ADDFBC77 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEC49B25945541C39B2BB53B /* Zocial.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		842F315A2068448C001E92A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842F31592068448C001E92A4 /* GoogleService-Info.plist */; };
+		85F2FD21DE8DD925EB6B03E7 /* libPods-EarlyBirdAssistantTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6039918CD70EF58B68D1B3 /* libPods-EarlyBirdAssistantTests.a */; };
 		934CEBBFB31B4285B65A97C5 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 530126CB4B8949638DF7D7D0 /* libRNVectorIcons.a */; };
 		A037611E467948639BA0EDFB /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9C57E5F97AC4A80A1FDA751 /* Feather.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		BD131E7760E94324A1F8A6BA /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 844571C678CB42BEBA8A7CC5 /* Octicons.ttf */; };
+		C11B008E8A5A48F7A01E39DE /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E025BBA2BC4648FC9EB46218 /* libRNFirebase.a */; };
+		CBD7C782135D55CA7989BCE7 /* libPods-EarlyBirdAssistant-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69620A9E6D9BA7F052B8155C /* libPods-EarlyBirdAssistant-tvOSTests.a */; };
 		D9F820E1E8034131AB3C3013 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47196C85CACE49578BA49C08 /* FontAwesome.ttf */; };
 		E708A9F7E06141D8944A0820 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B47925886C44B79B471346D /* EvilIcons.ttf */; };
 /* End PBXBuildFile section */
@@ -263,6 +269,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		842F31572068441E001E92A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FE8B72B0F8402A8EE5DED2 /* RNFirebase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNFirebase;
+		};
 		8468F5CE205CF49D00D9C47B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -356,26 +369,41 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EarlyBirdAssistant/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EarlyBirdAssistant/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		19FA925BEB234D92A947F7C8 /* libPods-EarlyBirdAssistant-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EarlyBirdAssistant-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		298A9FA589664C1FADD1040E /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		2AF5703A0E27FC5FAD048F92 /* Pods-EarlyBirdAssistant-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistant-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOSTests/Pods-EarlyBirdAssistant-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* EarlyBirdAssistant-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EarlyBirdAssistant-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* EarlyBirdAssistant-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EarlyBirdAssistant-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A2A3CA70854D212C85D786 /* Pods-EarlyBirdAssistant-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistant-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOSTests/Pods-EarlyBirdAssistant-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47196C85CACE49578BA49C08 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		492334C419A44668B8F4FD4B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		4B6039918CD70EF58B68D1B3 /* libPods-EarlyBirdAssistantTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EarlyBirdAssistantTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		530126CB4B8949638DF7D7D0 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		5B47925886C44B79B471346D /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		62FE8B72B0F8402A8EE5DED2 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		69620A9E6D9BA7F052B8155C /* libPods-EarlyBirdAssistant-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EarlyBirdAssistant-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E88468AD76E4DB6A88CA4C9 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		827CCBEFBDE36544DFF55BEE /* Pods-EarlyBirdAssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistantTests/Pods-EarlyBirdAssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		842F31592068448C001E92A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		844571C678CB42BEBA8A7CC5 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		860B3891857E4950A469D194 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		89B5BC1B2FB44D6AB13D65A2 /* Walbaum Fraktur.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Walbaum Fraktur.ttf"; path = "../assets/fonts/Walbaum Fraktur.ttf"; sourceTree = "<group>"; };
+		9BE901BF5E764D818D5DC39E /* libPods-EarlyBirdAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EarlyBirdAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EA31CBFD9A970A67DE054F5 /* Pods-EarlyBirdAssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistantTests/Pods-EarlyBirdAssistantTests.release.xcconfig"; sourceTree = "<group>"; };
 		A13251C50FF849008C80305B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		BADFFBC1CF284B1987D9B5F9 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		BCB4D5170574887010548B3A /* Pods-EarlyBirdAssistant-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistant-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOS/Pods-EarlyBirdAssistant-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BEC49B25945541C39B2BB53B /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		C9C57E5F97AC4A80A1FDA751 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		CB3CE3FEECE406E28787F871 /* Pods-EarlyBirdAssistant-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistant-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOS/Pods-EarlyBirdAssistant-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DCFE40BFB9CDBEE25B3EFDDF /* Pods-EarlyBirdAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistant/Pods-EarlyBirdAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		E025BBA2BC4648FC9EB46218 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
+		E69FDFC508033E11093838A9 /* Pods-EarlyBirdAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistant/Pods-EarlyBirdAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				85F2FD21DE8DD925EB6B03E7 /* libPods-EarlyBirdAssistantTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +434,8 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				934CEBBFB31B4285B65A97C5 /* libRNVectorIcons.a in Frameworks */,
+				C11B008E8A5A48F7A01E39DE /* libRNFirebase.a in Frameworks */,
+				23F54A7036DFE9F14131534F /* libPods-EarlyBirdAssistant.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +451,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				4556A258741F7A6B28DDF80E /* libPods-EarlyBirdAssistant-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +459,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD7C782135D55CA7989BCE7 /* libPods-EarlyBirdAssistant-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +572,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				842F31592068448C001E92A4 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -572,6 +606,10 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				9BE901BF5E764D818D5DC39E /* libPods-EarlyBirdAssistant.a */,
+				19FA925BEB234D92A947F7C8 /* libPods-EarlyBirdAssistant-tvOS.a */,
+				69620A9E6D9BA7F052B8155C /* libPods-EarlyBirdAssistant-tvOSTests.a */,
+				4B6039918CD70EF58B68D1B3 /* libPods-EarlyBirdAssistantTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -610,6 +648,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				860B3891857E4950A469D194 /* RNVectorIcons.xcodeproj */,
+				62FE8B72B0F8402A8EE5DED2 /* RNFirebase.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -633,6 +672,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				13A26E2E16C84329A864EF61 /* Resources */,
 				8468F5A8205CF48D00D9C47B /* Recovered References */,
+				FD2EB7746AC60F7E570510CF /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -650,10 +690,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		842F31542068441E001E92A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				842F31582068441E001E92A4 /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8468F5A8205CF48D00D9C47B /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				530126CB4B8949638DF7D7D0 /* libRNVectorIcons.a */,
+				E025BBA2BC4648FC9EB46218 /* libRNFirebase.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -675,6 +724,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FD2EB7746AC60F7E570510CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E69FDFC508033E11093838A9 /* Pods-EarlyBirdAssistant.debug.xcconfig */,
+				DCFE40BFB9CDBEE25B3EFDDF /* Pods-EarlyBirdAssistant.release.xcconfig */,
+				CB3CE3FEECE406E28787F871 /* Pods-EarlyBirdAssistant-tvOS.debug.xcconfig */,
+				BCB4D5170574887010548B3A /* Pods-EarlyBirdAssistant-tvOS.release.xcconfig */,
+				40A2A3CA70854D212C85D786 /* Pods-EarlyBirdAssistant-tvOSTests.debug.xcconfig */,
+				2AF5703A0E27FC5FAD048F92 /* Pods-EarlyBirdAssistant-tvOSTests.release.xcconfig */,
+				827CCBEFBDE36544DFF55BEE /* Pods-EarlyBirdAssistantTests.debug.xcconfig */,
+				9EA31CBFD9A970A67DE054F5 /* Pods-EarlyBirdAssistantTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -682,9 +746,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EarlyBirdAssistantTests" */;
 			buildPhases = (
+				BFDDDB9B06EE5CD7ABE40096 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				1732CFFEC16A161223EF98D1 /* [CP] Embed Pods Frameworks */,
+				7BDF35D1E76D06BD0281B0A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -700,10 +767,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EarlyBirdAssistant" */;
 			buildPhases = (
+				39FD9468E985799ABB3894C0 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				8FB21D005A9F54AB8EFD82C6 /* [CP] Embed Pods Frameworks */,
+				2B9018CEBF885A5C22FFC3DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -718,10 +788,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EarlyBirdAssistant-tvOS" */;
 			buildPhases = (
+				51342FCDCF9D97480363CC9F /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
 				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+				AA97715A8BE7580DA1A69B85 /* [CP] Embed Pods Frameworks */,
+				6E83F554C371F66117AB7E5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -736,9 +809,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EarlyBirdAssistant-tvOSTests" */;
 			buildPhases = (
+				43768D5451549981DD776453 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
+				27A48EA7A7FA3E9E34FCE19A /* [CP] Embed Pods Frameworks */,
+				FD976AAC1DB35894BC039AD5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -836,6 +912,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 842F31542068441E001E92A4 /* Products */;
+					ProjectRef = 62FE8B72B0F8402A8EE5DED2 /* RNFirebase.xcodeproj */;
 				},
 				{
 					ProductGroup = 8468F5DE205CF49D00D9C47B /* Products */;
@@ -1049,6 +1129,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		842F31582068441E001E92A4 /* libRNFirebase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFirebase.a;
+			remoteRef = 842F31572068441E001E92A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		8468F5CF205CF49D00D9C47B /* libjsinspector.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1135,6 +1222,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				842F315A2068448C001E92A4 /* GoogleService-Info.plist in Resources */,
 				222D820A01834E9BA1D3EDFA /* Entypo.ttf in Resources */,
 				E708A9F7E06141D8944A0820 /* EvilIcons.ttf in Resources */,
 				A037611E467948639BA0EDFB /* Feather.ttf in Resources */,
@@ -1182,6 +1270,51 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		1732CFFEC16A161223EF98D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistantTests/Pods-EarlyBirdAssistantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27A48EA7A7FA3E9E34FCE19A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOSTests/Pods-EarlyBirdAssistant-tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B9018CEBF885A5C22FFC3DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistant/Pods-EarlyBirdAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1195,6 +1328,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		39FD9468E985799ABB3894C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarlyBirdAssistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43768D5451549981DD776453 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarlyBirdAssistant-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51342FCDCF9D97480363CC9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarlyBirdAssistant-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E83F554C371F66117AB7E5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOS/Pods-EarlyBirdAssistant-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BDF35D1E76D06BD0281B0A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistantTests/Pods-EarlyBirdAssistantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB21D005A9F54AB8EFD82C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistant/Pods-EarlyBirdAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA97715A8BE7580DA1A69B85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOS/Pods-EarlyBirdAssistant-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFDDDB9B06EE5CD7ABE40096 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarlyBirdAssistantTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD976AAC1DB35894BC039AD5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarlyBirdAssistant-tvOSTests/Pods-EarlyBirdAssistant-tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1263,6 +1543,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 827CCBEFBDE36544DFF55BEE /* Pods-EarlyBirdAssistantTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1272,12 +1553,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = EarlyBirdAssistantTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1291,18 +1574,21 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA31CBFD9A970A67DE054F5 /* Pods-EarlyBirdAssistantTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = EarlyBirdAssistantTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1316,6 +1602,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69FDFC508033E11093838A9 /* Pods-EarlyBirdAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1324,6 +1611,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = EarlyBirdAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1340,6 +1628,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCFE40BFB9CDBEE25B3EFDDF /* Pods-EarlyBirdAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1347,6 +1636,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = EarlyBirdAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1363,6 +1653,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB3CE3FEECE406E28787F871 /* Pods-EarlyBirdAssistant-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1376,11 +1667,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "EarlyBirdAssistant-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1397,6 +1690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB4D5170574887010548B3A /* Pods-EarlyBirdAssistant-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1410,11 +1704,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "EarlyBirdAssistant-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1431,6 +1727,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A2A3CA70854D212C85D786 /* Pods-EarlyBirdAssistant-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1445,6 +1742,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.EarlyBirdAssistant-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1456,6 +1754,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF5703A0E27FC5FAD048F92 /* Pods-EarlyBirdAssistant-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1469,6 +1768,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.EarlyBirdAssistant-tvOSTests";
