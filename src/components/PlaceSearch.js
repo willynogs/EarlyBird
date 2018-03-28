@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import { AsyncStorage, View, Text } from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../actions';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import * as traffic from '../lib/traffic';
 import config from '../../config';
 
 class PlaceSearch extends Component {
   async saveLocation(location) {
     const { goBack } = this.props.navigation;
-    const { callback } = this.props.navigation.state.params;
+    const { setTraffic } = this.props;
 
     try {
       const str = JSON.stringify(location);
-      callback(location);
       await AsyncStorage.setItem('@EarlyBird:WorkLocation', str)
-      .then(() => goBack());
+      .then(() => {
+        traffic.getTraffic({lat: latitude, lon: longitude}, {lat: json.lat, lon: json.lng})
+        goBack();
+      });
     } catch(e) {
       console.log(e);
       goBack();
@@ -58,4 +64,12 @@ class PlaceSearch extends Component {
   }
 }
 
-export default PlaceSearch;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(Actions, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlaceSearch);

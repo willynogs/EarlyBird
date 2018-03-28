@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../actions';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import * as weather from '../lib/weather';
 
@@ -14,7 +17,7 @@ class Weather extends Component {
   }
 
   componentWillMount() {
-    const { latitude, longitude } = this.props.coords;
+    const { latitude, longitude } = this.props.user.coords;
 
     weather.get(latitude, longitude)
     .then(response => {
@@ -77,4 +80,12 @@ const styles = {
   }
 };
 
-export default Weather;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(Actions, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Weather);

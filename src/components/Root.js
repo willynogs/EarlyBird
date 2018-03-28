@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
-
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../actions';
 import Weather from './Weather';
 import News from './News';
 import Traffic from './Traffic';
@@ -10,15 +12,16 @@ class Root extends Component {
     super(props);
 
     this.state = {
-      loading: true,
-      coords: {}
+      loading: true
     };
   }
 
   componentWillMount() {
     navigator.geolocation.getCurrentPosition(response => {
       const { coords } = response;
-      this.setState({ coords, loading: false });
+      const { setUserLocation } = this.props;
+      setUserLocation(coords);
+      this.setState({ loading: false });
     });
   }
 
@@ -35,7 +38,7 @@ class Root extends Component {
   }
 
   showLoading() {
-    const { loading, coords } = this.state;
+    const { loading } = this.state;
 
     if(loading) {
       return (
@@ -45,9 +48,9 @@ class Root extends Component {
 
     return (
       <View style={{ flex: 1 }}>
-        <Traffic coords={coords} navigation={this.props.navigation} />
+        <Traffic navigation={this.props.navigation} />
 
-        <Weather coords={coords} />
+        <Weather />
 
         <News navigation={this.props.navigation} />
       </View>
@@ -63,4 +66,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Root;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(Actions, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Root);

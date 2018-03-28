@@ -1,5 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from './src/actions';
 import firebase from 'react-native-firebase';
 import AuthTabs from './src/navigation/AuthTabs';
 import Tabs from './src/navigation/Tabs';
@@ -11,13 +14,14 @@ class App extends React.Component {
     this.unsubscriber = null;
 
     this.state = {
-      user: null
     };
   }
 
   componentDidMount() {
+    const { setUser } = this.props;
+
     this.unsubscriber = firebase.auth().onAuthStateChanged((user) => {
-      this.setState({ user });
+      setUser(user);
     });
   }
 
@@ -28,7 +32,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { user } = this.state;
+    const { user } = this.props;
 
     return (
       <View style={{ flex: 1, paddingTop: 25 }}>
@@ -38,4 +42,12 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(Actions, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { AsyncStorage, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../actions';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import moment from 'moment';
 import * as traffic from '../lib/traffic';
@@ -10,13 +13,13 @@ class Traffic extends Component {
 
     this.state = {
       loading: true,
-      locationSaved: false,
-      traffic: {}
+      locationSaved: false
     };
   }
 
   async componentWillMount() {
-    const { latitude, longitude } = this.props.coords;
+    const { latitude, longitude } = this.props.user.coords;
+    const { setTraffic } = this.props;
 
     try {
       const value = await AsyncStorage.getItem('@EarlyBird:WorkLocation');
@@ -24,7 +27,8 @@ class Traffic extends Component {
         const json = JSON.parse(value);
         traffic.getTraffic({lat: latitude, lon: longitude}, {lat: json.lat, lon: json.lng})
         .then(response => {
-          this.setState({ loading: false, locationSaved: true, traffic: response })
+          setTraffic(response);
+          this.setState({ loading: false, locationSaved: true })
         }).catch(e => {
           console.log(e);
           this.setState({ loading: false })
@@ -47,7 +51,8 @@ class Traffic extends Component {
   }
 
   showLoading() {
-    const { loading, traffic } = this.state;
+    const { loading } = this.state;
+    const { traffic } = this.props;
     const { trafficContainer, trafficHeader, trafficTime, textContainer } = styles;
 
     if(loading) {
@@ -67,7 +72,7 @@ class Traffic extends Component {
   }
 
   setLocation(location) {
-    const { latitude, longitude } = this.props.coords;
+    const { latitude, longitude } = this.props.user.coords;
 
     traffic.getTraffic({lat: latitude, lon: longitude}, {lat: location.lat, lon: location.lng})
     .then(response => {
@@ -102,13 +107,13 @@ class Traffic extends Component {
   }
 
   getDuration() {
-    const { value } = this.state.traffic.rows[0].elements[0].duration;
+    const { value } = this.props.traffic.rows[0].elements[0].duration;
     const dur = moment.duration(value, 'seconds');
     return `${dur.hours() > 0 ? dur.hours() + ' Hr ' : ''}${dur.minutes() > 0 ? dur.minutes() + ' Min' : ''}`;
   }
 
   getArrivalTime() {
-    const { value } = this.state.traffic.rows[0].elements[0].duration;
+    const { value } = this.props.traffic.rows[0].elements[0].duration;
     return moment().add(value, 's').format('h:mm:ss a');
   }
 }
@@ -133,4 +138,12 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Traffic;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(Actions, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Traffic);
