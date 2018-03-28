@@ -14,6 +14,7 @@ class App extends React.Component {
     this.unsubscriber = null;
 
     this.state = {
+      loggedIn: false
     };
   }
 
@@ -21,6 +22,7 @@ class App extends React.Component {
     const { setUser } = this.props;
 
     this.unsubscriber = firebase.auth().onAuthStateChanged((user) => {
+      user ? this.setState({ loggedIn: true }) : this.setState({ loggedIn: false });
       setUser(user);
     });
   }
@@ -32,11 +34,12 @@ class App extends React.Component {
   }
 
   render() {
+    const { loggedIn } = this.state;
     const { user } = this.props;
 
     return (
       <View style={{ flex: 1, paddingTop: 25 }}>
-        {user ? <Tabs /> : <AuthTabs />}
+        {loggedIn ? <Tabs /> : <AuthTabs />}
       </View>
     );
   }

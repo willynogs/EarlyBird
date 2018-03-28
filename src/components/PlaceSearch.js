@@ -10,14 +10,21 @@ import config from '../../config';
 class PlaceSearch extends Component {
   async saveLocation(location) {
     const { goBack } = this.props.navigation;
+    const { latitude, longitude } = this.props.user.coords;
     const { setTraffic } = this.props;
 
     try {
       const str = JSON.stringify(location);
       await AsyncStorage.setItem('@EarlyBird:WorkLocation', str)
       .then(() => {
-        traffic.getTraffic({lat: latitude, lon: longitude}, {lat: json.lat, lon: json.lng})
-        goBack();
+        traffic.getTraffic({lat: latitude, lon: longitude}, {lat: location.lat, lon: location.lng})
+        .then(response => {
+          setTraffic(response);
+          goBack();
+        }).catch(e => {
+          console.log(e);
+          goBack();
+        });
       });
     } catch(e) {
       console.log(e);

@@ -10,7 +10,7 @@ import { setUser, setTraffic } from '../actions';
 const user = (state = {}, action) => {
   switch(action.type) {
     case 'SET_USER':
-      return Object.assign({}, state, action.user._user);
+      return Object.assign({}, state, action.user);
     case 'SET_USER_LOCATION':
       return Object.assign({}, state, { coords: action.coords });
     default:
@@ -22,7 +22,7 @@ const user = (state = {}, action) => {
 const traffic = (state = {}, action) => {
   switch(action.type) {
     case 'SET_TRAFFIC':
-      return Object.assign(state, action.traffic);
+      return Object.assign({}, state, action.traffic);
     default:
       return state;
   }

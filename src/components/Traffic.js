@@ -71,17 +71,6 @@ class Traffic extends Component {
     );
   }
 
-  setLocation(location) {
-    const { latitude, longitude } = this.props.user.coords;
-
-    traffic.getTraffic({lat: latitude, lon: longitude}, {lat: location.lat, lon: location.lng})
-    .then(response => {
-      this.setState({ traffic: response, locationSaved: true });
-    }).catch(e => {
-      console.log(e);
-    });
-  }
-
   showLocation() {
     const { trafficTime, textContainer } = styles;
     const { locationSaved } = this.state;
