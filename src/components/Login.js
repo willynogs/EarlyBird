@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { View, TextInput, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { KeyboardAvoidingView, TextInput, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import firebase from 'react-native-firebase';
+import Toast from 'react-native-root-toast';
 import Header from './Header';
 
 class Login extends Component {
@@ -14,10 +15,10 @@ class Login extends Component {
   }
 
   render() {
-    const { container, sectionHeader, inputStyle } = styles;
+    const { container, sectionHeader, inputStyle, authButton, authButtonText } = styles;
 
     return (
-      <View style={container}>
+      <KeyboardAvoidingView behavior={'position'} style={container}>
         <Text style={sectionHeader}>WELCOME BACK</Text>
 
         <TextInput
@@ -33,10 +34,10 @@ class Login extends Component {
           secureTextEntry={true}
           onChangeText={(password) => this.setState({ password })} />
 
-        <TouchableOpacity onPress={this.handleLogin.bind(this)}>
-          <Text>Login</Text>
+        <TouchableOpacity style={authButton} onPress={this.handleLogin.bind(this)}>
+          <Text style={authButtonText}>LOGIN</Text>
         </TouchableOpacity>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 
@@ -46,7 +47,12 @@ class Login extends Component {
     .then((response) => {
       console.log(response);
     }).catch((e) => {
-      console.log(e);
+      let toast = Toast.show(String(e), {
+        duration: Toast.durations.LONG,
+        position: Toast.positions.TOP,
+        shadow: false,
+        animation: true
+      });
     });
   }
 }
@@ -55,21 +61,38 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#FFF',
     paddingHorizontal: 25
   },
   sectionHeader: {
     fontSize: 30,
+    textAlign: 'center',
     color: '#eb685b',
-    fontWeight: '200'
+    fontWeight: '200',
+    marginBottom: 20
   },
   inputStyle: {
     alignSelf: 'stretch',
     borderWidth: 1,
     borderColor: '#666',
+    borderRadius: 7,
+    minWidth: '90%',
     marginBottom: 10,
     paddingVertical: 5,
+    paddingHorizontal: 10,
+    fontSize: 18
+  },
+  authButton: {
+    backgroundColor: '#eb685b',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 7,
+    paddingVertical: 12,
     paddingHorizontal: 10
+  },
+  authButtonText: {
+    color: '#FFF'
   }
 });
 
