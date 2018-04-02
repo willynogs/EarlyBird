@@ -22,8 +22,13 @@ class App extends React.Component {
     const { setUser } = this.props;
 
     this.unsubscriber = firebase.auth().onAuthStateChanged((user) => {
-      user ? this.setState({ loggedIn: true }) : this.setState({ loggedIn: false });
-      setUser(user._user);
+      if(user) {
+        this.setState({ loggedIn: true });
+        setUser(user._user);
+      } else {
+        this.setState({ loggedIn: false });
+        setUser({});
+      }
     });
 
     firebase.database().goOnline();

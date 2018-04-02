@@ -14,17 +14,17 @@ class Settings extends Component {
 
     return (
       <View style={outerContainer}>
-        <TouchableOpacity onPress={() => navigate('PlaceSearch')} style={buttonContainer}>
+        <TouchableOpacity onPress={() => navigate('TrafficConfig')} style={buttonContainer}>
           <Text style={sectionHeading}>SET WORK LOCATION</Text>
           <Ionicons name='ios-arrow-round-forward' size={30} style={{ color: '#eb685b' }} />
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => null} style={buttonContainer}>
+        <TouchableOpacity onPress={() => navigate('WeatherConfig')} style={buttonContainer}>
           <Text style={sectionHeading}>SET WEATHER LOCATION</Text>
           <Ionicons name='ios-arrow-round-forward' size={30} style={{ color: '#eb685b' }} />
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => null} style={buttonContainer}>
+        <TouchableOpacity onPress={() => navigate('NewsConfig')} style={buttonContainer}>
           <Text style={sectionHeading}>CONFIGURE NEWS</Text>
           <Ionicons name='ios-arrow-round-forward' size={30} style={{ color: '#eb685b' }} />
         </TouchableOpacity>

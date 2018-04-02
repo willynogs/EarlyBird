@@ -8,7 +8,7 @@ import firebase from 'react-native-firebase';
 import * as traffic from '../lib/traffic';
 import config from '../../config';
 
-class PlaceSearch extends Component {
+class TrafficConfig extends Component {
   constructor(props) {
     super(props);
 
@@ -94,4 +94,4 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators(Actions, dispatch);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PlaceSearch);
+export default connect(mapStateToProps, mapDispatchToProps)(TrafficConfig);
