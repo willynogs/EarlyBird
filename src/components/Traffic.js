@@ -72,25 +72,25 @@ class Traffic extends Component {
   }
 
   showLocation() {
-    const { trafficTime, textContainer } = styles;
+    const { trafficTime, trafficContainer, textContainer } = styles;
     const { locationSaved } = this.state;
 
     if(locationSaved) {
       return (
-        <View style={textContainer}>
-          <Text style={trafficTime}>
-            <Ionicons name='ios-clock-outline' size={30} />
-            {this.getDuration()}
-          </Text>
-          <Text>You will arrive at {this.getArrivalTime()}</Text>
+        <View style={trafficContainer}>
+          <Ionicons name='ios-clock-outline' size={35} />
+          <View style={textContainer}>
+            <Text style={trafficTime}>{this.getDuration()}</Text>
+            <Text>You will arrive at {this.getArrivalTime()}</Text>
+          </View>
         </View>
       );
     }
 
     return (
-      <View style={textContainer}>
+      <View style={trafficContainer}>
         <Text style={trafficTime}>No Location Saved</Text>
-        <Text>Click TRAFFIC above to set your work location.</Text>
+        <Text>Go to the settings tab to set your work location.</Text>
       </View>
     );
   }
@@ -98,7 +98,23 @@ class Traffic extends Component {
   getDuration() {
     const { value } = this.props.traffic.rows[0].elements[0].duration;
     const dur = moment.duration(value, 'seconds');
-    return `${dur.hours() > 0 ? dur.hours() + ' Hr ' : ''}${dur.minutes() > 0 ? dur.minutes() + ' Min' : ''}`;
+    const days = dur.days();
+    const hours = dur.hours();
+    const minutes = dur.minutes();
+    const seconds = dur.seconds();
+    let result;
+
+    if(days > 0) {
+      result = 'You are too far from work.';
+    } else if(hours > 0) {
+      result = `${hours}H ${minutes}M ${seconds}S`;
+    } else if(minutes > 0) {
+      result = `${minutes}M ${seconds}S`;
+    } else {
+      result = `${seconds} seconds`;
+    }
+
+    return result;
   }
 
   getArrivalTime() {
@@ -122,8 +138,13 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: '600'
   },
+  trafficContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
   textContainer: {
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginHorizontal: 10
   }
 });
 

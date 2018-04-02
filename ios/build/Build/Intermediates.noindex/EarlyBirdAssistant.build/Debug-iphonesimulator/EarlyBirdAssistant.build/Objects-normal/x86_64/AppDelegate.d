@@ -1,6 +1,52 @@
 dependencies: \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/EarlyBirdAssistant/AppDelegate.m \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/EarlyBirdAssistant/AppDelegate.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/Firebase/Core/Sources/module.modulemap \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/Firebase/Core/Sources/Firebase.h \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBundleURLProvider.h \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
