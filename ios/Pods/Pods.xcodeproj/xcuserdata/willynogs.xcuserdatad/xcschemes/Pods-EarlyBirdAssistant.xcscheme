@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C7F70B654B132C0FB3116A75180496D"
+               BlueprintIdentifier = "CF131301457E9E6573F7F48279D4D6E8"
                BlueprintName = "Pods-EarlyBirdAssistant"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-EarlyBirdAssistant.a">

@@ -48,5 +48,14 @@ dependencies: \
   ../../../ios/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRUser.h \
   ../../../ios/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRUserInfo.h \
   ../../../ios/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRUserMetadata.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h \
   ../../../ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h \
   ../../../ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h

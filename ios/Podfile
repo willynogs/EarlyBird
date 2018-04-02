@@ -8,6 +8,7 @@ target 'EarlyBirdAssistant' do
   # Pods for EarlyBirdAssistant
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'EarlyBirdAssistantTests' do
     inherit! :search_paths

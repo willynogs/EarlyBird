@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { AsyncStorage, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from '../actions';
+import firebase from 'react-native-firebase';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import moment from 'moment';
 import * as traffic from '../lib/traffic';
@@ -11,20 +12,24 @@ class Traffic extends Component {
   constructor(props) {
     super(props);
 
+    this.ref = null;
+
     this.state = {
       loading: true,
       locationSaved: false
     };
   }
 
-  async componentWillMount() {
+  componentWillMount() {
+    const { uid } = this.props.user;
     const { latitude, longitude } = this.props.user.coords;
     const { setTraffic } = this.props;
 
-    try {
-      const value = await AsyncStorage.getItem('@EarlyBird:WorkLocation');
-      if (value !== null){
-        const json = JSON.parse(value);
+    this.ref = firebase.database().ref(`traffic/${uid}`);
+    this.ref.on('value', (snap) => {
+      const { _value } = snap;
+      if(_value) {
+        const json = JSON.parse(_value);
         traffic.getTraffic({lat: latitude, lon: longitude}, {lat: json.lat, lon: json.lng})
         .then(response => {
           setTraffic(response);
@@ -36,10 +41,7 @@ class Traffic extends Component {
       } else {
         this.setState({ locationSaved: false, loading: false });
       }
-    } catch (error) {
-      console.log(error);
-      this.setState({ locationSaved: false, loading: false });
-    }
+    });
   }
 
   render() {
@@ -89,8 +91,11 @@ class Traffic extends Component {
 
     return (
       <View style={trafficContainer}>
-        <Text style={trafficTime}>No Location Saved</Text>
-        <Text>Go to the settings tab to set your work location.</Text>
+        <Ionicons name='ios-clock-outline' size={35} />
+        <View style={textContainer}>
+          <Text style={trafficTime}>No Location Saved</Text>
+          <Text>Go to the settings tab to set your work location.</Text>
+        </View>
       </View>
     );
   }

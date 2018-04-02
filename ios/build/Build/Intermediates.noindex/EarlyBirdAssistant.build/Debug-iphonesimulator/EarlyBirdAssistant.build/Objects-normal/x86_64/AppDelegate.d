@@ -43,6 +43,16 @@ dependencies: \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h \
+  /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
   /Users/willynogs/Documents/CODE/EarlyBird/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
