@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from '../actions';
+import firebase from 'react-native-firebase';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import * as weather from '../lib/weather';
 
@@ -10,21 +11,35 @@ class Weather extends Component {
   constructor(props) {
     super(props);
 
+    this.ref = null;
     this.state = {
       loading: true,
       weather: {}
     };
   }
 
-  componentWillMount() {
-    const { latitude, longitude } = this.props.user.coords;
-
+  getWeather(latitude, longitude) {
     weather.get(latitude, longitude)
     .then(response => {
       this.setState({ loading: false, weather: response });
     }).catch(e => {
       console.log(e);
-    })
+    });
+  }
+
+  componentWillMount() {
+    const { uid } = this.props.user;
+    const { latitude, longitude } = this.props.user.coords;
+    this.ref = firebase.database().ref(`weather/${uid}`);
+    this.ref.on('value', (snap) => {
+      const { _value } = snap;
+      if(_value) {
+        const json = JSON.parse(_value);
+        this.getWeather(json.lat, json.lng);
+      } else {
+        this.getWeather(latitude, longitude);
+      }
+    });
   }
 
   render() {

@@ -110,14 +110,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.8)',
     padding: 15,
     maxWidth: '90%',
-    justifyContent: 'space-around'
+    justifyContent: 'center'
   },
   leadArticleTitle: {
     fontSize: 25,
     fontWeight: '200',
     color: '#FFF',
-    textAlign: 'center',
-    marginBottom: 7
+    textAlign: 'center'
   },
   leadArticleSubText: {
     color: '#FFF',

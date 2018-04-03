@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, View, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from '../actions';
@@ -28,32 +28,33 @@ class Root extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-
-          {this.showLoading()}
-
-        </ScrollView>
+        {this.showLoading()}
       </View>
     );
   }
 
   showLoading() {
+    const { container, loadingContainer } = styles;
     const { loading } = this.state;
 
     if(loading) {
       return (
-        <Text>Loading</Text>
+        <View style={loadingContainer}>
+          <ActivityIndicator />
+        </View>
       );
     }
 
     return (
-      <View style={{ flex: 1 }}>
-        <Traffic navigation={this.props.navigation} />
+      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+        <View style={{ flex: 1 }}>
+          <Traffic navigation={this.props.navigation} />
 
-        <Weather />
+          <Weather />
 
-        <News navigation={this.props.navigation} />
-      </View>
+          <News navigation={this.props.navigation} />
+        </View>
+      </ScrollView>
     );
   }
 }
@@ -64,6 +65,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingHorizontal: 25
   },
+  loadingContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: '#FFF'
+  }
 });
 
 const mapStateToProps = state => {
