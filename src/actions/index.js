@@ -23,3 +23,17 @@ export const setTraffic = (traffic) => {
     traffic
   }
 };
+
+export const setNewsBrief = (articles) => {
+  return {
+    type: 'SET_BRIEF',
+    articles
+  }
+};
+
+export const setNewsCategory = (category) => {
+  return {
+    type: 'SET_CATEGORY',
+    category
+  }
+};

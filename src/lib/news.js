@@ -5,11 +5,11 @@ https://newsapi.org/
 
 import config from '../../config';
 
-/* Gets the general news */
-export const getAll = (country = 'us') => {
+/* Gets the general news, potentially within a category */
+export const getAll = (category = null, country = 'us') => {
   return new Promise((resolve, reject) => {
     const { news_key } = config;
-    fetch(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${news_key}`, {
+    fetch(`https://newsapi.org/v2/top-headlines?${category ? 'category=' + category + '&' : ''}country=${country}&apiKey=${news_key}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

@@ -4,7 +4,6 @@ https://redux.js.org/basics/reducers
 */
 
 import { combineReducers } from 'redux';
-import { setUser, setTraffic } from '../actions';
 
 /* User Reducer */
 const user = (state = {}, action) => {
@@ -28,7 +27,20 @@ const traffic = (state = {}, action) => {
   }
 };
 
+/* News Reducer */
+const news = (state = {}, action) => {
+  switch(action.type) {
+    case 'SET_BRIEF':
+      return Object.assign({}, state, action.articles);
+    case 'SET_CATEGORY':
+      return Object.assign({}, state, { category: action.category });
+    default:
+      return state;
+  }
+};
+
 export default combineReducers({
   user,
-  traffic
+  traffic,
+  news
 });

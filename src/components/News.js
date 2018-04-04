@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../actions';
+import firebase from 'react-native-firebase';
 import moment from 'moment';
 import * as news from '../lib/news';
 
@@ -9,6 +13,8 @@ class News extends Component {
 
     this.showLoading = this.showLoading.bind(this);
 
+    this.ref = null;
+
     this.state = {
       loading: true,
       leadLayout: {},
@@ -16,13 +22,31 @@ class News extends Component {
     };
   }
 
-  componentWillMount() {
-    news.getAll()
+  getNews(category) {
+    news.getAll(category)
     .then(response => {
       const { articles } = response;
       this.setState({ articles, loading: false });
     }).catch(e => {
       console.log(e);
+    });
+  }
+
+  componentWillMount() {
+    const { uid } = this.props.user;
+    const { setNewsCategory } = this.props;
+
+    this.ref = firebase.database().ref(`news/${uid}`);
+    this.ref.on('value', (snap) => {
+      const { _value } = snap;
+
+      if(_value) {
+        this.getNews(_value);
+      } else {
+        this.getNews();
+      }
+
+      setNewsCategory(_value);
     });
   }
 
@@ -39,6 +63,7 @@ class News extends Component {
   showLoading() {
     const { newsContainer, leadArticleContainer, leadArticleImage, leadArticleText, leadArticleTitle, leadArticleSubText, newsHeader } = styles;
     const { loading, articles, leadLayout } = this.state;
+    const { category } = this.props.news;
 
     if(loading) {
       return(
@@ -48,7 +73,7 @@ class News extends Component {
 
     return (
       <View style={newsContainer}>
-        <Text style={newsHeader}>NEWS</Text>
+        <Text style={newsHeader}>{category ? category.toUpperCase() + ' ' : ''}NEWS</Text>
         <TouchableOpacity style={leadArticleContainer} onPress={() => this.goToArticle(articles[0])} onLayout={e => this.setState({ leadLayout: e.nativeEvent.layout })}>
           <Image source={{ uri: articles[0].urlToImage }} resizeMode={'cover'} style={{ height: leadLayout.width, width: leadLayout.width }} />
           <View style={leadArticleText}>
@@ -77,6 +102,25 @@ class News extends Component {
         </TouchableOpacity>
       );
     });
+
+    /*
+    let result = [];
+
+    for(let x = 1; x < 5; x += 1) {
+      const e = articles[x];
+      result.push(
+        <TouchableOpacity key={e.title} onPress={() => this.goToArticle(e)} style={{ paddingVertical: 5 }}>
+          <Text style={{ fontSize: 16, fontWeight: '200' }}>{e.title}</Text>
+          <View>
+            <Text>{e.source.name}</Text>
+            <Text>{moment(e.publishedAt).format('MMMM Do YYYY @ h:mm a')}</Text>
+          </View>
+        </TouchableOpacity>
+      );
+    }
+
+    return result;
+    */
   }
 
   goToArticle(article) {
@@ -127,4 +171,12 @@ const styles = StyleSheet.create({
   }
 });
 
-export default News;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(Actions, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(News);
