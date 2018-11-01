@@ -27,6 +27,7 @@ class Traffic extends Component {
 
     this.ref = firebase.database().ref(`traffic/${uid}`);
     this.ref.on('value', (snap) => {
+      console.log(snap);
       const { _value } = snap;
       if(_value) {
         const json = JSON.parse(_value);

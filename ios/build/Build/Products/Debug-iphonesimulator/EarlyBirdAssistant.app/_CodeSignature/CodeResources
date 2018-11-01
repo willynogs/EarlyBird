@@ -50,11 +50,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		iyqj5XnY6HgNEtjdAUdX0eSfiuI=
+		BBY8lXmbcO4CtznlkgGw+2gy5SI=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		nLSdtklo60LFLDQLZMGyuVa4K4g=
+		KqOdp1Fjh+HFLgtDZLc27/N2Iu4=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -123,7 +123,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Fkbnvwpa+oxaM6FhHFRXXvafjeU=
+		e/lKfKLKfOvreMbSJHOzTwe2ImE=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -151,19 +151,19 @@
 		</data>
 		<key>PlugIns/EarlyBirdAssistantTests.xctest.dSYM/Contents/Resources/DWARF/EarlyBirdAssistantTests</key>
 		<data>
-		jO7rNK1pb1I4+wtKpALLUQ/3Jfk=
+		OSP5gYmZnhNBHMmipExoB4hUAmo=
 		</data>
 		<key>PlugIns/EarlyBirdAssistantTests.xctest/EarlyBirdAssistantTests</key>
 		<data>
-		ibOpDDcaC25zqz/Pf/FdGHUzuag=
+		g8FgtShJYjKGV4FWc/awUIkeaeg=
 		</data>
 		<key>PlugIns/EarlyBirdAssistantTests.xctest/Info.plist</key>
 		<data>
-		JMobOnb2YsjYn+xh0Crk0C3/4Xw=
+		Y+pqqGbtpg/APctUyOEcp3X1WRE=
 		</data>
 		<key>PlugIns/EarlyBirdAssistantTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		JbvnJrohB6C80IIbLO6tEGmSoiM=
+		DFLpJsYV6UDENftzFDEDtVBuVeY=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -305,22 +305,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iyqj5XnY6HgNEtjdAUdX0eSfiuI=
+			BBY8lXmbcO4CtznlkgGw+2gy5SI=
 			</data>
 			<key>hash2</key>
 			<data>
-			A5Dyw5UzKSxAbFfNYsfS6NRKtMx4i2celRmDj9Ncq0c=
+			sfueOMEmbrDmIuF/VDRuNCUrudqEdvwRSGKBNNh2J+Y=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nLSdtklo60LFLDQLZMGyuVa4K4g=
+			KqOdp1Fjh+HFLgtDZLc27/N2Iu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6/6xqJA01ZC0O4GOQL5qHtPdBeqpMmEsjmGz30OsQQU=
+			lD08hIweXxkoYgTsP0mjrTjw1SIpxGHw5Om0Mwx3dYw=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -549,44 +549,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jO7rNK1pb1I4+wtKpALLUQ/3Jfk=
+			OSP5gYmZnhNBHMmipExoB4hUAmo=
 			</data>
 			<key>hash2</key>
 			<data>
-			3s1wCZPPkN4GvFWVnwtUDlmPL73fjsavLm0bgpIJ+b4=
+			cSu11NNRmZwqKVTvaGuogzt2zHgEp/L+4pQxQ7aAQSs=
 			</data>
 		</dict>
 		<key>PlugIns/EarlyBirdAssistantTests.xctest/EarlyBirdAssistantTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ibOpDDcaC25zqz/Pf/FdGHUzuag=
+			g8FgtShJYjKGV4FWc/awUIkeaeg=
 			</data>
 			<key>hash2</key>
 			<data>
-			FR6wwu3IZD8qbF3mGHB7wBirt9pXksufPNxoAofTL6g=
+			B8S64Zbmrsc0xAQpZtEZi9PblPXjZpmWvqYQyG3xlbE=
 			</data>
 		</dict>
 		<key>PlugIns/EarlyBirdAssistantTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JMobOnb2YsjYn+xh0Crk0C3/4Xw=
+			Y+pqqGbtpg/APctUyOEcp3X1WRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			RVYStvxW8VBAJ3jhj3sXFm7ckI3pOSNcnaILqIznBRI=
+			Ugdj3M8fxban5uD+ev1Qzm+Sk9GunRJWxtBFsn9h69Q=
 			</data>
 		</dict>
 		<key>PlugIns/EarlyBirdAssistantTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JbvnJrohB6C80IIbLO6tEGmSoiM=
+			DFLpJsYV6UDENftzFDEDtVBuVeY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cSedOsRI20h3XZGe1j5tiXaJrOC2zBr0v+8u9l6gd8w=
+			7giHtKWuZRKMada3Eaf0I8zAkuZncPeYC3E3W3PfjN4=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
@@ -625,7 +625,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -656,24 +656,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -709,13 +697,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

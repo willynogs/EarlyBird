@@ -46,7 +46,7 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		64F82C297EFA4726ADDFBC77 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEC49B25945541C39B2BB53B /* Zocial.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		842F315A2068448C001E92A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842F31592068448C001E92A4 /* GoogleService-Info.plist */; };
+		848AA9E4218B2DAC00E2C498 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848AA9E3218B2DAC00E2C498 /* GoogleService-Info.plist */; };
 		85F2FD21DE8DD925EB6B03E7 /* libPods-EarlyBirdAssistantTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6039918CD70EF58B68D1B3 /* libPods-EarlyBirdAssistantTests.a */; };
 		934CEBBFB31B4285B65A97C5 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 530126CB4B8949638DF7D7D0 /* libRNVectorIcons.a */; };
 		A037611E467948639BA0EDFB /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9C57E5F97AC4A80A1FDA751 /* Feather.ttf */; };
@@ -388,8 +388,8 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		827CCBEFBDE36544DFF55BEE /* Pods-EarlyBirdAssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyBirdAssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyBirdAssistantTests/Pods-EarlyBirdAssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		842F31592068448C001E92A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		844571C678CB42BEBA8A7CC5 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		848AA9E3218B2DAC00E2C498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		860B3891857E4950A469D194 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		89B5BC1B2FB44D6AB13D65A2 /* Walbaum Fraktur.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Walbaum Fraktur.ttf"; path = "../assets/fonts/Walbaum Fraktur.ttf"; sourceTree = "<group>"; };
 		9BE901BF5E764D818D5DC39E /* libPods-EarlyBirdAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EarlyBirdAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -572,7 +572,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				842F31592068448C001E92A4 /* GoogleService-Info.plist */,
+				848AA9E3218B2DAC00E2C498 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -1222,7 +1222,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				842F315A2068448C001E92A4 /* GoogleService-Info.plist in Resources */,
+				848AA9E4218B2DAC00E2C498 /* GoogleService-Info.plist in Resources */,
 				222D820A01834E9BA1D3EDFA /* Entypo.ttf in Resources */,
 				E708A9F7E06141D8944A0820 /* EvilIcons.ttf in Resources */,
 				A037611E467948639BA0EDFB /* Feather.ttf in Resources */,
